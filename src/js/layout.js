@@ -11,6 +11,7 @@ import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
 import Card from "./component/Card";
 import AddContact from "./component/AddContact";
+import EditContact from "./component/EditContact";
 
 //create your first component
 const Layout = () => {
@@ -29,7 +30,9 @@ const Layout = () => {
 						<Route path="/single/:theid" element={<Single />} />
 						<Route path="/card" element={<Card />}/>
 						<Route path="/addcontact" element={<AddContact />}/>
+						<Route path="/editcontact/:id" element={<EditContact />}/>
 						<Route path="*" element={<h1>Not found!</h1>} />
+
 					</Routes>
 					
 				</ScrollToTop>
